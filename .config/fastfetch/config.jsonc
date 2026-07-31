@@ -74,5 +74,10 @@
             "format": "└{$1}────────────────────{$1}┘"
         },
         "break",
+        {
+            "type": "colors",
+            "paddingLeft": 34,
+            "symbol": "circle"
+        }
     ]
 }
