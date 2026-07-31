@@ -28,7 +28,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal = "kitty"
 local fileManager = "kitty zsh -ic 'yazi'"
-local menu = "wofi --show drun"
+local menu = "wofi"
 local browser = "firefox"
 local editor = "kitty zsh -ic 'nvim'"
 
