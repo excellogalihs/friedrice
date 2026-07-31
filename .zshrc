@@ -17,4 +17,3 @@ alias ls='eza --tree --icons --level=1'
 install() {
   yay -Slq | fzf -m --preview 'yay -Si {}' | xargs -ro yay -S
 }
-fastfetch
