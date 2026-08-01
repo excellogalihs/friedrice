@@ -1,3 +1,5 @@
+![screenshot](screenshot.png)
+![screenshot1](screenshot1.png)
 # Installation
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/excellogalihs/friedrice/main/install.sh)
