@@ -1,9 +1,12 @@
+# Add new line for every command
 add_newline = true
 
+# Formatting
 format = """
 [╭─](white) [󰣇 ](bold blue)[$directory](bold cyan)[$git_branch](bold purple)[$python](bold yellow)
 [╰─❯](white) """
 
+# Directory
 [directory]
 home_symbol = " ~"
 truncation_length = 3
@@ -12,6 +15,7 @@ truncate_to_repo = false
 read_only = "  "
 read_only_style = "bold red"
 
+# Directory icons
 [directory.substitutions]
 "Desktop" = "󰍹 "
 "Documents" = "󰈙"
@@ -21,10 +25,12 @@ read_only_style = "bold red"
 "Public" = "󰡅 "
 "Videos" = "󰕧 "
 
+# Git
 [git_branch]
 symbol = " "
 format = "on [$symbol$branch]($style) "
 
+# Python
 [python]
 symbol = " "
 format = "via [$symbol$version]($style) "
