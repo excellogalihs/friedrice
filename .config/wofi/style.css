@@ -24,7 +24,6 @@
 @define-color base      #1e1e2e;
 @define-color mantle    #181825;
 @define-color crust     #11111b;
-
 window {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
@@ -33,7 +32,6 @@ window {
     background-color: @base;
     border-radius: 5px;
 }
-
 #input {
     color: @text;
     background-color: @base;
@@ -42,31 +40,26 @@ window {
     margin: 5px;
     padding: 5px;
 }
-
 #outer-box {
     margin: 5px;
     padding: 5px;
 }
-
 #inner-box {
     margin: 5px;
     padding: 5px;
 }
-
 #entry {
     background-color: @base;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
 }
-
 #entry:selected {
     background-color: @green;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
 }
-
 #entry:selected #text {
     color: @base;
 }
