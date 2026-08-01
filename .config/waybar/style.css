@@ -51,26 +51,26 @@ window#waybar {
 
 #clock {
   color: @maroon;
-  border-radius: 5px;
   margin: 5px;
   padding: 0px 5px;
-  border-radius: 5px;
 }
 #pulseaudio {
   color: @yellow;
   margin: 5px;
   padding: 0px 5px;
-  border-radius: 5px;
 }
 #network {
   color: @peach;
   margin: 5px;
   padding: 0px 5px;
-  border-radius: 5px;
 }
 #battery {
     color: @text;
-    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 5px;
+}
+#battery.charging {
+    color: @green;
     margin: 5px;
     padding: 0px 5px;
 }
