@@ -3,14 +3,17 @@
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "battery"],
+
     "hyprland/workspaces": {
         "persistent-workspaces": {
             "*": [1, 2, 3, 4, 5]
         }
     },
+
     "clock": {
         "format": "󰥔 {:%a, %d. %b  %H:%M}"
     },
+
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-icons": {
@@ -18,10 +21,12 @@
         },
         "scroll-step": 5
     },
+
     "network": {
         "format": "  {essid}",
         "tooltip": false,
     },
+
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
