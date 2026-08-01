@@ -29,11 +29,9 @@
     font-size: 14px;
     font-weight: 700;
 }
-
 window#waybar {
     background-color: @base;
 }
-
 #workspaces button {
     color: @text;
     background-color: @base;
@@ -41,14 +39,11 @@ window#waybar {
     margin: 5px;
     padding: 0px 5px;
 }
-
 #workspaces button.active {
     color: black;
     background-color: @green;
     border-radius: 5px;
 }
-
-
 #clock {
   color: @maroon;
   margin: 5px;
