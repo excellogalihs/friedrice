@@ -28,7 +28,7 @@
             "format": "zsh",
         },
         {
-            "key": " distro",
+            "key": "󰣇 distro",
             "keyColor": "34",
             "type": "os",
             "format": "arch btw",
