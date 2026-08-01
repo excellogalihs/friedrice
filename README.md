@@ -1,6 +1,3 @@
 ```bash
-git clone https://github.com/excellogalihs/friedrice
-cd friedrice
-chmod +x copy.sh
-./copy.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/excellogalihs/friedrice/main/install.sh)
 ```
