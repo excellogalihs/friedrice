@@ -28,8 +28,9 @@ hl.monitor({
 -- Set programs that you use
 local terminal = "kitty"
 local fileManager = "kitty zsh -ic 'yazi'"
-local menu = "wofi --show drun"
+local menu = "wofi"
 local browser = "firefox"
+local editor = "nvim"
 
 -------------------
 ---- AUTOSTART ----
@@ -256,6 +257,7 @@ hl.bind(
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("poweroff"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("reboot"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim - | wl-copy"))
