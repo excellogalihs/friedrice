@@ -6,47 +6,47 @@
     "display": {
         "separator": "",
         "key": {
-            "width": 15
+            "width": 3
         }
     },
     "modules": [
         {
-            "key": " user",
+            "key": " ",
             "keyColor": "31",
             "type": "title",
             "format": "{user-name}",
         },
         {
-            "key": "󰅐 uptime",
+            "key": "󰅐 ",
             "keyColor": "32",
             "type": "uptime",
         },
         {
-            "key": " shell",
+            "key": " ",
             "keyColor": "33",
             "type": "shell",
             "format": "zsh",
         },
         {
-            "key": "󰣇 distro",
+            "key": "󰣇 ",
             "keyColor": "34",
             "type": "os",
             "format": "arch btw",
         },
         {
-            "key": " kernel",
+            "key": " ",
             "keyColor": "35",
             "type": "kernel",
             "format": "linux",
         },
         {
-            "key": " terminal",
+            "key": " ",
             "keyColor": "36",
             "type": "terminal",
             "format": "kitty",
         },
         {
-            "key": " colors",
+            "key": " ",
             "keyColor": "37",
             "type": "colors",
             "symbol": "circle",
