@@ -8,6 +8,7 @@ format = """
 home_symbol = " ~"
 truncation_length = 3
 truncation_symbol = ".../"
+truncate_to_repo = false
 read_only = "  "
 read_only_style = "bold red"
 
