@@ -24,6 +24,7 @@
 @define-color base      #1e1e2e;
 @define-color mantle    #181825;
 @define-color crust     #11111b;
+
 window {
     font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
