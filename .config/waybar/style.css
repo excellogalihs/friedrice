@@ -24,14 +24,17 @@
 @define-color base      #1e1e2e;
 @define-color mantle    #181825;
 @define-color crust     #11111b;
+
 * {
     font-family: JetBrains Mono Nerd Font;
     font-size: 14px;
     font-weight: 700;
 }
+
 window#waybar {
     background-color: @base;
 }
+
 #workspaces button {
     color: @text;
     background-color: @base;
@@ -39,31 +42,37 @@ window#waybar {
     margin: 5px;
     padding: 0px 5px;
 }
+
 #workspaces button.active {
     color: black;
     background-color: @green;
     border-radius: 5px;
 }
+
 #clock {
   color: @maroon;
   margin: 5px;
   padding: 0px 5px;
 }
+
 #pulseaudio {
   color: @yellow;
   margin: 5px;
   padding: 0px 5px;
 }
+
 #network {
   color: @peach;
   margin: 5px;
   padding: 0px 5px;
 }
+
 #battery {
     color: @text;
     margin: 5px;
     padding: 0px 5px;
 }
+
 #battery.charging {
     color: @green;
     margin: 5px;
