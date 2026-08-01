@@ -30,7 +30,7 @@ local terminal = "kitty"
 local fileManager = "kitty zsh -ic 'yazi'"
 local menu = "wofi"
 local browser = "firefox"
-local editor = "nvim"
+local editor = "kitty zsh -ic 'nvim'"
 
 -------------------
 ---- AUTOSTART ----
