@@ -4,13 +4,15 @@ set -e
 echo "Initializing friedrice setup by excellogalihs..."
 
 echo "Installing packages..."
-sudo pacman -S git base-devel hyprland hyprpaper hyprpolkitagent xdg-desktop-portal-hyprland sddm pipewire pipewire-pulse wireplumber kitty zsh zsh-autosuggestions zsh-syntax-highlighting starship waybar swaync wofi firefox ttf-jetbrains-mono-nerd grim wl-clipboard nvim yazi fzf bat zoxide eza fastfetch
+sudo pacman -S --noconfirm git base-devel pipewire pipewire-pulse wireplumber hyprland hyprpaper hyprpolkitagent xdg-desktop-portal-hyprland sddm kitty waybar wofi swaync zsh zsh-autosuggestions zsh-syntax-highlighting starship nvim yazi fzf bat zoxide eza fastfetch grim wl-clipboard firefox ttf-jetbrains-mono-nerd
 
 echo "Configuring shell..."
-[[ $SHELL == *zsh ]] || (chsh -s $(which zsh))
+chsh -s $(which zsh)
 
 echo "Installing yay..."
-[[ yay -v &>/dev/null ]] || (git clone https://aur.archlinux.org/yay && cd yay && makepkg -si && cd && rm -rf yay)
+git clone https://aur.archlinux.org/yay
+cd yay
+makepkg -si --noconfirm
 
 echo "Copying configs..."
 cp -f ~/friedrice/.zshrc ~/
