@@ -39,31 +39,31 @@ window {
     border: @base;
     border-radius: 5;
     margin: 5px;
-    padding: 0px 5px;
+    padding: 5px;
 }
 
 #outer-box {
     margin: 5px;
-    padding: 0px 5px;
+    padding: 5px;
 }
 
 #inner-box {
     margin: 5px;
-    padding: 0px 5px;
+    padding: 5px;
 }
 
 #entry {
     background-color: @base;
     border-radius: 5;
     margin: 5px;
-    padding: 0px 5px;
+    padding: 5px;
 }
 
 #entry:selected {
     background-color: @green;
     border-radius: 5;
     margin: 5px;
-    padding: 0px 5px;
+    padding: 5px;
 }
 
 #entry:selected #text {
