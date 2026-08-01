@@ -10,6 +10,7 @@ echo "Configuring shell..."
 chsh -s $(which zsh)
 
 echo "Installing yay..."
+rm -rf yay
 git clone https://aur.archlinux.org/yay
 cd yay
 makepkg -si --noconfirm
