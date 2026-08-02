@@ -25,41 +25,41 @@
 @define-color mantle    #181825;
 @define-color crust     #11111b;
 * {
-    font-family: "JetBrainsMono Nerd Font";
-    font-size: 15px;
-    font-weight: bold;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 15px;
+  font-weight: bold;
 }
 window {
-    background-color: @base;
-    border-radius: 5px;
+  background-color: @base;
+  border-radius: 5px;
 }
 #input {
-    color: @text;
-    background-color: @base;
-    border: @base;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+  color: @text;
+  background-color: @base;
+  border: @base;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 #outer-box {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 #inner-box {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 #entry {
-    color: @text;
-    background-color: @base;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+  color: @text;
+  background-color: @base;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 #entry:selected {
-    color: @base;
-    background-color: @green;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+  color: @base;
+  background-color: @green;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
 }
