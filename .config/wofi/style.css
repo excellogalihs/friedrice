@@ -26,8 +26,8 @@
 @define-color crust     #11111b;
 * {
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: bold;
 }
 window {
     background-color: @base;
@@ -50,17 +50,16 @@ window {
     padding: 5px;
 }
 #entry {
+    color: @text;
     background-color: @base;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
 }
 #entry:selected {
+    color: @base;
     background-color: @green;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-}
-#entry:selected #text {
-    color: @base;
 }

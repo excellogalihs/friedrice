@@ -26,8 +26,8 @@
 @define-color crust     #11111b;
 * {
     font-family: JetBrains Mono Nerd Font;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: bold;
 }
 window#waybar {
     background-color: @base;
@@ -40,7 +40,7 @@ window#waybar {
     padding: 0px 5px;
 }
 #workspaces button.active {
-    color: black;
+    color: @base;
     background-color: @green;
     border-radius: 5px;
 }

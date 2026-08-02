@@ -31,7 +31,6 @@ local browser = "firefox"
 local menu = "wofi"
 local fileManager = "kitty zsh -ic 'yazi'"
 local editor = "kitty zsh -ic 'nvim'"
-local wlogout = "wlogout"
 local screenshot = "grim - | wl-copy"
 
 -------------------
@@ -44,6 +43,7 @@ local screenshot = "grim - | wl-copy"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function()
+	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 	hl.exec_cmd("hyprpaper & waybar & swaync")
 end)
 
@@ -84,7 +84,7 @@ hl.config({
 		gaps_in = 5,
 		gaps_out = 20,
 
-		border_size = 2,
+		border_size = 3,
 
 		col = {
 			active_border = { colors = { "rgb(cdd6f4)" }, angle = 45 },
@@ -110,7 +110,7 @@ hl.config({
 
 		shadow = {
 			enabled = true,
-			range = 4,
+			range = 3,
 			render_power = 3,
 			color = 0xee1a1a1a,
 		},
@@ -260,9 +260,11 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(wlogout))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind("ALT + C", hl.dsp.exec_cmd("poweroff"))
+hl.bind("ALT + V", hl.dsp.exec_cmd("reboot"))
+hl.bind("ALT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Move focus with mainMod + vim keys
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
@@ -271,10 +273,10 @@ hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 
 -- Swap active window with another window using mainMod + SHIFT + Vim keys
-hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.swap({ direction = "left" }))
-hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.swap({ direction = "down" }))
-hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.swap({ direction = "up" }))
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.swap({ direction = "right" }))
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
