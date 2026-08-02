@@ -27,10 +27,12 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal = "kitty"
-local fileManager = "kitty zsh -ic 'yazi'"
-local menu = "wofi"
 local browser = "firefox"
+local menu = "wofi"
+local fileManager = "kitty zsh -ic 'yazi'"
 local editor = "kitty zsh -ic 'nvim'"
+local wlogout = "wlogout"
+local screenshot = "grim - | wl-copy"
 
 -------------------
 ---- AUTOSTART ----
@@ -254,14 +256,13 @@ hl.bind(
 	mainMod .. " + M",
 	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(wlogout))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("poweroff"))
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("reboot"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim - | wl-copy"))
 
 -- Move focus with mainMod + vim keys
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
