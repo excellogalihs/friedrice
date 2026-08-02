@@ -1,5 +1,6 @@
 ![screenshot](screenshot.png)
 ![screenshot1](screenshot1.png)
+![screenshot2](screenshot2.png)
 # Prerequisites
 1. A fully functional Arch Linux setup
 2. Curl
