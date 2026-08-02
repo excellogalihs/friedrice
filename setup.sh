@@ -9,6 +9,6 @@ yay -S --noconfirm wlogout
 chsh -s $(which zsh)
 cp -f ~/friedrice/.zshrc ~/
 cp -f ~/friedrice/.config/starship.toml ~/.config/
-rm -rf ~/.config/{fastfetch,hypr,kitty,waybar,wlogout,wofi}
-cp -r ~/friedrice/.config/{fastfetch,hypr,kitty,waybar,wlogout,wofi} ~/.config/
+rm -rf ~/.config/{fastfetch,hypr,kitty,swaync,waybar,wlogout,wofi}
+cp -r ~/friedrice/.config/{fastfetch,hypr,kitty,swaync,waybar,wlogout,wofi} ~/.config/
 reboot
