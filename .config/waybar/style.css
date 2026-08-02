@@ -45,19 +45,19 @@ window#waybar {
     border-radius: 5px;
 }
 #clock {
-  color: @maroon;
-  margin: 5px;
-  padding: 0px 5px;
+    color: @maroon;
+    margin: 5px;
+    padding: 0px 5px;
 }
 #pulseaudio {
-  color: @yellow;
-  margin: 5px;
-  padding: 0px 5px;
+    color: @yellow;
+    margin: 5px;
+    padding: 0px 5px;
 }
 #network {
-  color: @peach;
-  margin: 5px;
-  padding: 0px 5px;
+    color: @peach;
+    margin: 5px;
+    padding: 0px 5px;
 }
 #battery {
     color: @text;
