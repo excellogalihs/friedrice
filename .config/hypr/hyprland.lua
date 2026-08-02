@@ -266,9 +266,15 @@ hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 
 -- Move focus with mainMod + vim keys
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+
+-- Swap active window with another window using mainMod + SHIFT + Vim keys
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.swap({ direction = "left" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.swap({ direction = "down" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.swap({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.swap({ direction = "right" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
