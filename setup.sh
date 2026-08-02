@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-sudo pacman -S --noconfirm git base-devel pipewire pipewire-pulse wireplumber hyprland hyprpaper hyprpolkitagent xdg-desktop-portal-hyprland sddm kitty waybar wofi swaync zsh zsh-autosuggestions zsh-syntax-highlighting starship nvim yazi fzf bat zoxide eza fastfetch grim wl-clipboard firefox ttf-jetbrains-mono-nerd
+sudo pacman -S --noconfirm git base-devel pipewire pipewire-pulse wireplumber hyprland hyprpaper hyprpolkitagent hyprlock desktop-portal-hyprland sddm kitty waybar wofi swaync zsh zsh-autosuggestions zsh-syntax-highlighting starship nvim yazi fzf bat zoxide eza fastfetch grim wl-clipboard firefox ttf-jetbrains-mono-nerd
 rm -rf yay
 git clone https://aur.archlinux.org/yay
 cd yay
