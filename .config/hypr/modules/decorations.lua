@@ -16,17 +16,10 @@ hl.config({
 		rounding_power = 5,
 		active_opacity = 1.0,
 		inactive_opacity = 0.5,
-		shadow = {
-			enabled = true,
-			range = 3,
-			render_power = 3,
-			color = 0xee1a1a1a,
-		},
 		blur = {
 			enabled = true,
 			size = 3,
 			passes = 3,
-			vibrancy = 0.1696,
 		},
 	},
 	animations = {
