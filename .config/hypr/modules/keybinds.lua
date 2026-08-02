@@ -17,9 +17,9 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(secondMod .. " + C", hl.dsp.exec_cmd("poweroff"))
-hl.bind(secondMod .. " + V", hl.dsp.exec_cmd("reboot"))
-hl.bind(secondMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind("ALT + C", hl.dsp.exec_cmd("poweroff"))
+hl.bind("ALT + V", hl.dsp.exec_cmd("reboot"))
+hl.bind("ALT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Move focus with mainMod + vim keys
 hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
