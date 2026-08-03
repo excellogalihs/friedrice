@@ -25,12 +25,24 @@
 @define-color mantle    #181825;
 @define-color crust     #11111b;
 * {
-  font-family: JetBrains Mono Nerd Font;
+  font-family: JetBrains Mono Nerd Font Propo;
   font-size: 15px;
   font-weight: bold;
 }
-window#waybar {
+#waybar {
   background-color: @base;
+}
+#custom-arch {
+  color: @base;
+  background-color: @blue;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 0px 5px;
+}
+#clock {
+  color: @maroon;
+  margin: 5px;
+  padding: 0px 5px;
 }
 #workspaces button {
   color: @text;
@@ -43,11 +55,6 @@ window#waybar {
   color: @base;
   background-color: @green;
   border-radius: 5px;
-}
-#clock {
-  color: @maroon;
-  margin: 5px;
-  padding: 0px 5px;
 }
 #pulseaudio {
   color: @yellow;

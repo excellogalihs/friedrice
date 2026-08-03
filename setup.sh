@@ -5,7 +5,7 @@ rm -rf yay
 git clone https://aur.archlinux.org/yay
 cd yay
 makepkg -si --noconfirm
-yay -S --noconfirm wlogout
+yay -S --noconfirm hyprmod
 chsh -s $(which zsh)
 cp -f ~/friedrice/.zshrc ~/
 cp -f ~/friedrice/.config/starship.toml ~/.config/
