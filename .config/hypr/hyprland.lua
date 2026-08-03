@@ -1,6 +1,6 @@
+require("hyprland-gui")
 require("modules.autostart")
 require("modules.decorations")
-require("modules.hyprland-gui")
 require("modules.input")
 require("modules.keybinds")
 require("modules.layout")
