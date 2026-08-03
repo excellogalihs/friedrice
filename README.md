@@ -1,3 +1,4 @@
+![screenshot](screenshot.png)
 # Prerequisites
 1. A fully functional Arch Linux setup
 2. Curl
