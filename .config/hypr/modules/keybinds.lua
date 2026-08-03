@@ -19,6 +19,10 @@ hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("ALT + C", hl.dsp.exec_cmd("poweroff"))
 hl.bind("ALT + V", hl.dsp.exec_cmd("reboot"))
+hl.bind(
+	"ALT + M",
+	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
+)
 hl.bind("ALT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Move focus with mainMod + vim keys
