@@ -17,6 +17,8 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
+
+-- Power
 hl.bind("ALT + C", hl.dsp.exec_cmd("poweroff"))
 hl.bind("ALT + V", hl.dsp.exec_cmd("reboot"))
 hl.bind(
