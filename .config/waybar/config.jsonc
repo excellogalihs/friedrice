@@ -20,7 +20,7 @@
   "pulseaudio": {
     "format": "{icon}{volume}%",
     "format-icons": {
-      "default": ["", " ", " "]
+      "default": [" ", " ", " "]
     },
     "scroll-step": 5,
     "tooltip": false
