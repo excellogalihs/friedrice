@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "margin-top": 15,
-  "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "wlr/taskbar", "pulseaudio", "network", "battery"],
+  "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "pulseaudio", "network", "battery"],
   "custom/arch": {
     "format": " 󰣇 ",
     "tooltip-format": "Hyprland Settings App",
@@ -23,11 +23,6 @@
     "persistent-workspaces": {
       "*": [1, 2, 3, 4, 5]
     }
-  },
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "tooltip-format": "{title}",
-    "on-click": "activate"
   },
   "pulseaudio": {
     "format": "{icon}",
