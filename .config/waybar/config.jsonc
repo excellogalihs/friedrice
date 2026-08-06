@@ -1,16 +1,15 @@
 {
   "layer": "top",
-  "modules-left": ["custom/arch", "clock"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["pulseaudio", "network", "battery"],
+  "margin-top": 15,
+  "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "wlr/taskbar", "pulseaudio", "network", "battery"],
   "custom/arch": {
     "format": " 󰣇 ",
-    "tooltip": false,
+    "tooltip-format": "Hyprland Settings App",
     "on-click": "hyprmod"
   },
   "clock": {
-    "format": "󰥔 {:%a, %d. %b  %H:%M}",
-    "tooltip": false
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}"
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -25,21 +24,28 @@
       "*": [1, 2, 3, 4, 5]
     }
   },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "tooltip-format": "{title}",
+    "on-click": "activate"
+  },
   "pulseaudio": {
-    "format": "{icon}{volume}%",
+    "format": "{icon}",
     "format-icons": {
       "default": [" ", " ", " "]
     },
     "scroll-step": 5,
-    "tooltip": false
+    "tooltip-format": "{volume}%",
+    "on-click": "pavucontrol"
   },
   "network": {
-    "format": " {essid}",
-    "tooltip": false,
+    "format": "󰤥 ",
+    "tooltip-format": "{essid}",
+    "on-click": "kitty zsh -ic 'nmtui'"
   },
   "battery": {
-    "format": "{icon}{capacity}%",
+    "format": "{icon}",
     "format-icons": [" ", " ", " ", " ", " "],
-    "tooltip": false
+    "tooltip-format": "{capacity}%"
   },
 }
