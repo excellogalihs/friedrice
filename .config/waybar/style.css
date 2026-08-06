@@ -44,17 +44,21 @@
   margin: 5px;
   padding: 0px 5px;
 }
-#workspaces button {
-  color: @text;
-  background-color: @base;
-  border-radius: 5px;
-  margin: 5px;
+#workspaces {
+  font-size: 5px;
+  margin: 10px;
   padding: 0px 5px;
 }
+#workspaces button {
+  background-color: @surface0;
+  border-radius: 100px;
+  margin: 3px;
+  padding: 0px 5px;
+  min-width: 5px;
+}
 #workspaces button.active {
-  color: @base;
   background-color: @green;
-  border-radius: 5px;
+  min-width: 15px;
 }
 #pulseaudio {
   color: @yellow;
