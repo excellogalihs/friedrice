@@ -26,6 +26,7 @@
 @define-color crust     #11111b;
 * {
   font-family: JetBrains Mono Nerd Font Propo;
+  font-weight: bold,
 }
 #waybar {
   background-color: @base;
