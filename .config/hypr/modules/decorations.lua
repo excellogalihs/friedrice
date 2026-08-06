@@ -2,18 +2,12 @@ hl.config({
 	general = {
 		gaps_in = 5,
 		gaps_out = 20,
-		border_size = 3,
-		col = {
-			active_border = { colors = { "rgb(cdd6f4)" }, angle = 45 },
-			inactive_border = "rgb(1e1e2e)",
-		},
-		resize_on_border = false,
-		allow_tearing = false,
+		border_size = 0,
 		layout = "dwindle",
 	},
 	decoration = {
-		rounding = 5,
-		rounding_power = 15,
+		rounding = 15,
+		rounding_power = 5,
 		active_opacity = 1.0,
 		inactive_opacity = 0.5,
 		blur = {
