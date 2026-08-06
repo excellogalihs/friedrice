@@ -4,7 +4,7 @@
   "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "pulseaudio", "network", "battery"],
   "custom/arch": {
     "format": " 󰣇 ",
-    "tooltip-format": "Hyprland Settings App",
+    "tooltip-format": "Settings",
     "on-click": "hyprmod"
   },
   "clock": {
