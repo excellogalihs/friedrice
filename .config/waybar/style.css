@@ -55,14 +55,15 @@
 #workspaces button {
   background-color: @surface0;
   border-radius: 50px;
-  margin: 5px;
+  margin: 3px;
   padding: 0px 5px;
   min-width: 5px;
+  transition: all 300ms ease-in-out;
 }
 #workspaces button.active {
   background-color: @green;
   border-radius: 50px;
-  margin: 5px;
+  margin: 3px;
   padding: 0px 5px;
   min-width: 15px;
   transition: all 300ms ease-in-out;
