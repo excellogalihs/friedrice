@@ -89,7 +89,6 @@
   padding: 0px 5px;
 }
 tooltip {
-  color: @text;
   background-color: @base;
   border-color: @base;
 }
