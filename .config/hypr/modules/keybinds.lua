@@ -7,8 +7,8 @@ local menu = "wofi"
 local fileManager = "kitty zsh -ic 'yazi'"
 local editor = "kitty zsh -ic 'nvim'"
 local screenshot = "grim - | wl-copy"
-local switch = "./friedrice/switch.sh"
 local wallpaper = "./friedrice/wallpaper.sh"
+local switch = "./friedrice/switch.sh"
 
 -- Common keys
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
@@ -20,6 +20,8 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(wallpaper))
 hl.bind(secondMod .. " + W", hl.dsp.exec_cmd(switch))
+
+--Window float
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 
 -- Power
