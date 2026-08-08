@@ -1,4 +1,4 @@
 hl.on("hyprland.start", function()
 	hl.exec_cmd("systemctl --user start hyprpolkitagent")
-	hl.exec_cmd("hyprpaper & waybar & swaync")
+	hl.exec_cmd("awww-daemon & waybar & swaync")
 end)
