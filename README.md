@@ -1,12 +1,12 @@
 ![screenshot](screenshot.jpg)
 # Keybinds
-SUPER + ENTER = Open kitty terminal
-SUPER + Q = Close window
-SUPER + D = Open wofi app launcher
-SUPER + B = Open firefox browser
-SUPER + E = Open yazi file manager
-SUPER + N = Open nvim editor
-SUPER + S = Screenshot and copy it to clipboard
+1. SUPER + ENTER = Open kitty terminal
+2. SUPER + Q = Close window
+3. SUPER + D = Open wofi app launcher
+4. SUPER + B = Open firefox browser
+5. SUPER + E = Open yazi file manager
+6. SUPER + N = Open nvim editor
+7. SUPER + S = Screenshot and copy it to clipboard
 SUPER + W = Switch waybar layout
 SUPER + F = Toggle window float
 ALT + C = Poweroff system
