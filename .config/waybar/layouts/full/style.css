@@ -20,6 +20,13 @@
   margin: 5px;
   padding: 5px;
 }
+#custom-weather {
+  color: @text;
+  background-color: @base;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 5px;
+}
 #clock {
   color: @maroon;
   background-color: @base;
