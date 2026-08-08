@@ -7,6 +7,7 @@ local menu = "wofi"
 local fileManager = "kitty zsh -ic 'yazi'"
 local editor = "kitty zsh -ic 'nvim'"
 local screenshot = "grim - | wl-copy"
+local switch = "./friedrice/switch.sh"
 
 -- Common keys
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
@@ -16,12 +17,16 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(screenshot))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(switch))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 
 -- Power
 hl.bind("ALT + C", hl.dsp.exec_cmd("poweroff"))
 hl.bind("ALT + V", hl.dsp.exec_cmd("reboot"))
-hl.bind("ALT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(
+	"ALT + M",
+	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
+)
 hl.bind("ALT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- Move focus with mainMod + vim keys
@@ -53,7 +58,15 @@ hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Volume and brightness
-hl.bind(mainMod .. " + X", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { locked = true, repeating = true })
+hl.bind(
+	mainMod .. " + X",
+	hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
+	{ locked = true, repeating = true }
+)
+hl.bind(
+	mainMod .. " + Z",
+	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
+	{ locked = true, repeating = true }
+)
 hl.bind(secondMod .. " + X", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"), { locked = true, repeating = true })
 hl.bind(secondMod .. " + Z", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"), { locked = true, repeating = true })

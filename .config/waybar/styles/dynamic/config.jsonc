@@ -1,0 +1,46 @@
+{
+  "position": "top",
+  "margin-top": 15,
+  "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "pulseaudio", "network", "battery"],
+  "custom/arch": {
+    "format": " 󰣇 ",
+    "tooltip-format": "Settings",
+    "on-click": "hyprmod"
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": ""
+    },
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5]
+    }
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": [" ", " ", " "]
+    },
+    "scroll-step": 5,
+    "tooltip-format": "{volume}%",
+    "on-click": "pavucontrol"
+  },
+  "network": {
+    "format": "󰤥 ",
+    "tooltip-format": "{essid}",
+    "on-click": "kitty zsh -ic 'nmtui'"
+  },
+  "battery": {
+    "format": "{icon}",
+    "format-icons": [" ", " ", " ", " ", " "],
+    "tooltip-format": "{capacity}%"
+  },
+}
