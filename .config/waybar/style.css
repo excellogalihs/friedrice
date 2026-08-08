@@ -13,33 +13,26 @@
 #waybar {
   background-color: transparent;
 }
-#custom-arch {
-  color: @blue;
+.modules-center {
   background-color: @base;
   border-radius: 30px;
-  margin: 5px;
-  padding: 5px;
 }
-#custom-weather {
-  color: @text;
-  background-color: @base;
+#custom-arch {
+  color: @base;
+  background-color: @blue;
   border-radius: 30px;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 #clock {
   color: @maroon;
-  background-color: @base;
-  border-radius: 30px;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 #workspaces {
   font-size: 5px;
-  background-color: @base;
-  border-radius: 30px;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 #workspaces button {
   background-color: @surface;
@@ -59,29 +52,23 @@
 }
 #pulseaudio {
   color: @yellow;
-  background-color: @base;
-  border-radius: 30px;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 #network {
   color: @peach;
-  background-color: @base;
-  border-radius: 30px;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 #battery {
   color: @text;
-  background-color: @base;
-  border-radius: 30px;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 #battery.charging {
   color: @green;
   margin: 5px;
-  padding: 5px;
+  padding: 0px 5px;
 }
 tooltip {
   background-color: @base;
