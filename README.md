@@ -7,20 +7,20 @@
 5. SUPER + E = Open yazi file manager
 6. SUPER + N = Open nvim editor
 7. SUPER + S = Screenshot and copy it to clipboard
-SUPER + W = Switch waybar layout
-SUPER + F = Toggle window float
-ALT + C = Poweroff system
-ALT + V = Reboot system
-ALT + M = Logout
-ALT + L = Lock system
-SUPER + H/J/K/L = Window navigation
-SUPER + SHIFT + H/J/K/L = Move Window
-SUPER + 1-9 = Switch workspaces
-SUPER + SHIFT + 1-9 = Move window to another workspace
-SUPER + X = Volume up
-SUPER + Z = Volume down
-SUPER + SHIFT + X = Brightness up
-SUPER + SHIFT + Z = Brightness down
+8. SUPER + W = Switch waybar layout
+9. SUPER + F = Toggle window float
+10. ALT + C = Poweroff system
+11. ALT + V = Reboot system
+12. ALT + M = Logout
+13. ALT + L = Lock system
+14. SUPER + H/J/K/L = Window navigation
+15. SUPER + SHIFT + H/J/K/L = Move Window
+16. SUPER + 1-9 = Switch workspaces
+17. SUPER + SHIFT + 1-9 = Move window to another workspace
+18. SUPER + X = Volume up
+19. SUPER + Z = Volume down
+20. SUPER + SHIFT + X = Brightness up
+21. SUPER + SHIFT + Z = Brightness down
 # Prerequisites
 1. A fully functional Arch Linux setup
 2. Curl
