@@ -1,6 +1,6 @@
 {
   "position": "top",
-  "margin-top": 15,
+  "margin-top": 10,
   "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "pulseaudio", "network", "battery"],
   "custom/arch": {
     "format": " 󰣇 ",
