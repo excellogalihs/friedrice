@@ -1,5 +1,5 @@
 {
-  "layer": "top",
+  "position": "top",
   "margin-top": 15,
   "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "pulseaudio", "network", "battery"],
   "custom/arch": {
