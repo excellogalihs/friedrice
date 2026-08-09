@@ -14,6 +14,7 @@
   "custom/weather": {
     "format": " {} ",
     "exec": "curl -s 'wttr.in/Surabaya?format=%t'"
+    "tooltip": false,
   },
   "clock": {
     "format": " {:%I:%M %p} ",
