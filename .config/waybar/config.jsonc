@@ -1,18 +1,37 @@
 {
   "position": "top",
-  "margin-top": 15,
-  "modules-center": ["custom/arch", "clock", "hyprland/workspaces", "pulseaudio", "network", "battery"],
+  "margin-top": 10,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": ["custom/arch", "custom/weather", "power-profiles-daemon"],
+  "modules-center": ["clock", "hyprland/workspaces"],
+  "modules-right": ["pulseaudio", "network", "battery"],
   "custom/arch": {
     "format": " 󰣇 ",
-    "tooltip-format": "Settings",
+    "tooltip-format": " Settings ",
     "on-click": "hyprmod"
   },
+  "custom/weather": {
+    "format": " {} ",
+    "exec": "curl -s 'wttr.in/Surabaya?format=%t'",
+    "tooltip": false
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "  ",
+      "performance": "  ",
+      "balanced": "  ",
+      "power-saver": "  "
+    },
+    "tooltip": false
+  },
   "clock": {
-    "format": "{:%H:%M}",
-    "tooltip-format": "{:%A, %B %d, %Y}"
+    "format": " {:%I:%M %p} ",
+    "tooltip-format": " {:%A, %B %d, %Y} "
   },
   "hyprland/workspaces": {
-    "format": "{icon}",
+    "format": " {icon} ",
     "format-icons": {
       "1": "",
       "2": "",
@@ -25,22 +44,22 @@
     }
   },
   "pulseaudio": {
-    "format": "{icon}",
+    "format": " {icon}{volume}% ",
     "format-icons": {
       "default": [" ", " ", " "]
     },
     "scroll-step": 5,
-    "tooltip-format": "{volume}%",
+    "tooltip": false,
     "on-click": "pavucontrol"
   },
   "network": {
-    "format": "󰤥 ",
-    "tooltip-format": "{essid}",
+    "format": " 󰤥 {essid} ",
+    "tooltip": false,
     "on-click": "kitty zsh -ic 'nmtui'"
   },
   "battery": {
-    "format": "{icon}",
+    "format": " {icon}{capacity}% ",
     "format-icons": [" ", " ", " ", " ", " "],
-    "tooltip-format": "{capacity}%"
+    "tooltip": false
   },
 }
