@@ -3,5 +3,6 @@ height=500px
 show=drun
 prompt=Search...
 no_actions=true
+hide_scroll=true
 allow_images=true
 gtk_dark=true
