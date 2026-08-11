@@ -3,18 +3,13 @@
   "margin-top": 10,
   "margin-left": 10,
   "margin-right": 10,
-  "modules-left": ["custom/arch", "custom/weather", "power-profiles-daemon"],
+  "modules-left": ["custom/arch", "power-profiles-daemon"],
   "modules-center": ["clock", "hyprland/workspaces"],
   "modules-right": ["pulseaudio", "network", "battery"],
   "custom/arch": {
     "format": " 󰣇 ",
     "tooltip-format": " Settings ",
     "on-click": "hyprmod"
-  },
-  "custom/weather": {
-    "format": " {} ",
-    "exec": "curl -s 'wttr.in/Surabaya?format=%t'",
-    "tooltip": false
   },
   "power-profiles-daemon": {
     "format": "{icon}",

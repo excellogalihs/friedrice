@@ -20,13 +20,6 @@
   margin: 5px;
   padding: 5px;
 }
-#custom-weather {
-  color: @text;
-  background-color: @base;
-  border-radius: 30px;
-  margin: 5px;
-  padding: 5px;
-}
 #power-profiles-daemon {
   background-color: @base;
   border-radius: 30px;
