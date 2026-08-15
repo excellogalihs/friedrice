@@ -9,7 +9,7 @@ yay -S --noconfirm hyprmod
 chsh -s $(which zsh)
 cp -f ~/friedrice/.zshrc ~/
 cp -f ~/friedrice/.config/starship.toml ~/.config/
-rm -rf ~/.config/{fastfetch,hypr,kitty,waybar,wofi}
-cp -r ~/friedrice/.config/{fastfetch,hypr,kitty,waybar,wofi} ~/.config/
+rm -rf ~/.config/{fastfetch,hypr,kitty,nvim,waybar,wofi}
+cp -r ~/friedrice/.config/{fastfetch,hypr,kitty,nvim,waybar,wofi} ~/.config/
 awww img ~/friedrice/wallpapers/astronaut.jpg
 reboot
