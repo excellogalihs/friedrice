@@ -1,4 +1,5 @@
 export EDITOR="nvim"
+export NEWT_COLORS="root=white,black"
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
