@@ -19,8 +19,8 @@ button {
 	background-size: 25%;
 }
 button:focus, button:active, button:hover {
-	background-color: @maroon;
-  border-color: @maroon
+	background-color: @blue;
+  border-color: @blue;
 }
 #lock {
   background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
