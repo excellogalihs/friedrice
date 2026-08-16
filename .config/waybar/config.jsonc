@@ -50,7 +50,7 @@
     },
     "scroll-step": 5,
     "tooltip": false,
-    "on-click": "pavucontrol"
+    "on-click": "kitty zsh -ic 'wiremix'"
   },
   "network": {
     "format": " 󰤥 {essid} ",
