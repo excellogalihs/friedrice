@@ -7,7 +7,7 @@
 @define-color surface   #313244;
 @define-color base      #1e1e2e;
 * {
-  font-family: JetBrains Mono Nerd Font Propo;
+  font-family: "JetBrainsMono Nerd Font Propo";
   font-weight: bold;
 }
 #waybar {
@@ -21,6 +21,13 @@
   padding: 5px;
 }
 #power-profiles-daemon {
+  background-color: @base;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 5px;
+}
+#custom-power {
+  color: @text;
   background-color: @base;
   border-radius: 30px;
   margin: 5px;
@@ -74,6 +81,13 @@
 }
 #network {
   color: @peach;
+  background-color: @base;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 5px;
+}
+#custom-notification {
+  color: @text;
   background-color: @base;
   border-radius: 30px;
   margin: 5px;

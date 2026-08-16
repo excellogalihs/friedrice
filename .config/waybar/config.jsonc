@@ -3,7 +3,7 @@
   "margin-top": 10,
   "margin-left": 10,
   "margin-right": 10,
-  "modules-left": ["custom/arch", "power-profiles-daemon"],
+  "modules-left": ["custom/arch", "power-profiles-daemon", "custom/power"],
   "modules-center": ["clock", "hyprland/workspaces"],
   "modules-right": ["pulseaudio", "network", "battery"],
   "custom/arch": {
@@ -20,6 +20,11 @@
       "power-saver": "  "
     },
     "tooltip": false
+  },
+  "custom/power": {
+    "format": "  ",
+    "tooltip": false,
+    "on-click": "wlogout"
   },
   "clock": {
     "format": " {:%I:%M %p} ",
