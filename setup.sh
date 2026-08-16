@@ -7,6 +7,8 @@ cd yay
 makepkg -si --noconfirm
 yay -S --noconfirm hyprmod wlogout
 chsh -s $(which zsh)
+cp -f ~/friedrice/powerlevel10k ~/
+cp -f ~/friedrice/.p10k.zsh ~/
 cp -f ~/friedrice/.zshrc ~/
 cp -f ~/friedrice/.config/starship.toml ~/.config/
 rm -rf ~/.config/{fastfetch,hypr,kitty,nvim,waybar,wlogout,wofi}
